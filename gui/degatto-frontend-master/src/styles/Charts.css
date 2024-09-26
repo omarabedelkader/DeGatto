@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+.chart-btn-container {
+    width: fit-content;
+    display: flex;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fac26d;
+}
+
+.chart-btn {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: #fac26d;
+    transition: background-color 0.3s;
+}
+
+.chart-btn:hover {
+   background-color: #b39363;
+}
+
+.chart-btn.active {
+    background-color: #b39363;
+ }
+
+.center-horizontal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.chart {
+    display: none;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+ }
+
+ .piechart {
+   padding: 30px 30%;
+}
+
+.chart.active {
+    display: block;
+ }
+
+ .charts-container {
+    width: 100%;
+ }
+
+ .download-chart-btn {
+    float: left;
+    margin-left: 10%;
+ }
+
+ .chart-name {
+   font-size: 14px;
+   font-weight: bold;
+   margin-left: 0px;
+   visibility: collapse;
+   width: 0;
+   height: 0;
+   transition: width 0.5s, visibility 0s, opacity 0.5s linear;
+   opacity: 0;
+ }
+
+.chart-btn:hover .chart-name {
+   visibility: visible;
+   width: auto;
+   height: auto;
+   margin-left: 10px;
+   opacity: 1;
+}

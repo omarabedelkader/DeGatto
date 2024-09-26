@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #fac26d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #c6ad86;
+  }
+
+  .primary-button.hidden {
+    display: none;
+  }
+  
+  .primary-button:hover {background-color: #f5d19c}
+  
+  .primary-button:active {
+    background-color: #f5d19c;
+    box-shadow: 0 4px #c6ad86;
+    transform: translateY(3px);
+  }
+
+.filepond--file-action-button {
+    cursor: pointer;
+}
+
+/* the text color of the drop label*/
+.filepond--drop-label {
+    color: #555;
+}
+
+/* underline color for "Browse" button */
+.filepond--label-action {
+    text-decoration-color: #aaa;
+}
+
+/* the background color of the filepond drop area */
+.filepond--panel-root {
+    background-color: #eee;
+}
+
+/* the border radius of the drop area */
+.filepond--panel-root {
+    border-radius: 0.5em;
+}
+
+/* the border radius of the file item */
+.filepond--item-panel {
+    border-radius: 0.5em;
+}
+
+/* the background color of the file and file panel (used when dropping an image) */
+.filepond--item-panel {
+    background-color: #555;
+}
+
+/* the background color of the drop circle */
+.filepond--drip-blob {
+    background-color: #999;
+}
+
+/* the background color of the black action buttons */
+.filepond--file-action-button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* the icon color of the black action buttons */
+.filepond--file-action-button {
+    color: white;
+}
+
+/* the color of the focus ring */
+.filepond--file-action-button:hover,
+.filepond--file-action-button:focus {
+    box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9);
+}
+
+/* the text color of the file status and info labels */
+.filepond--file {
+    color: white;
+}
+
+/* error state color */
+[data-filepond-item-state*='error'] .filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+    background-color: red;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+    background-color: green;
+}
+
+/* bordered drop area */
+.filepond--panel-root {
+    background-color: #f1f1f1;
+    /* border: 2px solid #2c3340; */
+}
+
+.filepond--root {
+    width: 256px;
+    text-align: center;
+}
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../images/space.jpg");
+}
+
+.degatto-logo {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    margin-left: 17.5px;
+}
+
+.project-title {
+    font-size: 80px;
+    color: white;
+    font-family: 'Fredoka One';
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-container {
+    float: left;
+    margin: 20px;
+}
+
+.menu-item {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: rgb(235, 235, 235);
+}
+
+.file-alert {
+    visibility: hidden;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.upload-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+body {
+  background: #333;
+}
+
+.loader {
+    display: none;
+    width:30px;
+    height:30px;
+
+    animation:infinite-spinning 2s infinite;
+    animation-timing-function:linear;
+    transform-origin:100% 100%;
+    margin-right: 30px;
+}
+
+.loader.active {
+    display: block;
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* .moon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px;
+  width: 200px;
+  height: 200px;
+  background: #c7cbd0;
+  border-radius: 50%;
+  box-shadow: inset -25px 0px 0 0px #9098a1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.moon:hover {
+  transform: scale(1.2);
+}
+
+li {
+  position: absolute;
+  list-style: none;
+  background: #737277;
+  border-radius: 50%;
+}
+li:nth-child(1) {
+  left: 25px;
+  top: 60px;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 6px -2px 0 0px #414043;
+}
+li:nth-child(2) {
+  left: 150px;
+  top: 50px;
+  width: 25px;
+  height: 25px;
+  box-shadow: inset 3px -1px 0 0px #414043;
+}
+
+li:nth-child(3) {
+  left: 100px;
+  top: 150px;
+  width: 25px;
+  height: 25px;
+  box-shadow: inset 3px -1px 0 0px #414043;
+}
+
+li:nth-child(4) {
+  left: 50px;
+  top: 150px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+li:nth-child(5) {
+  left: 87.5px;
+  top: 16.66666667px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+li:nth-child(6) {
+  left: 114.28571429px;
+  top: 80px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+}
+
+li:nth-child(7) {
+  left: 181.81818182px;
+  top: 100px;
+  width: 12.5px;
+  height: 12.5px;
+  box-shadow: inset 2.4px -0.8px 0 0px #414043;
+} */
